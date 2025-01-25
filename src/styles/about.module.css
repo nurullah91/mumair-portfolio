@@ -31,3 +31,106 @@
   right: 50%;
   transform: translateX(50%);
 }
+
+.lineContainer {
+  position: relative;
+  margin: 15px 0px;
+}
+.whiteLine {
+  width: 100%;
+  height: 12px;
+  border-radius: 6px;
+  background-color: #edecec;
+}
+
+/* UX orange line */
+.uxOrangeLine {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 90%;
+  height: 12px;
+  border-radius: 6px;
+  background-color: #fd6f00;
+}
+.uxOrangeLine::after {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  content: "";
+  width: 32px;
+  height: 32px;
+  background-color: #edecec;
+  border-radius: 50%;
+  border: 2px solid #fd6f00;
+}
+
+/* Web orange line */
+.webOrangeLine {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 80%;
+  height: 12px;
+  border-radius: 6px;
+  background-color: #fd6f00;
+}
+.webOrangeLine::after {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  content: "";
+  width: 32px;
+  height: 32px;
+  background-color: #edecec;
+  border-radius: 50%;
+  border: 2px solid #fd6f00;
+}
+
+/* app orange line */
+.appOrangeLine {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 95%;
+  height: 12px;
+  border-radius: 6px;
+  background-color: #fd6f00;
+}
+.appOrangeLine::after {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  content: "";
+  width: 32px;
+  height: 32px;
+  background-color: #edecec;
+  border-radius: 50%;
+  border: 2px solid #fd6f00;
+}
+
+/* Web orange line */
+.graphicOrangeLine {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 90%;
+  height: 12px;
+  border-radius: 6px;
+  background-color: #fd6f00;
+}
+.graphicOrangeLine::after {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  content: "";
+  width: 32px;
+  height: 32px;
+  background-color: #edecec;
+  border-radius: 50%;
+  border: 2px solid #fd6f00;
+}

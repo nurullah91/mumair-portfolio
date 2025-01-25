@@ -39,3 +39,8 @@ a {
   border: none;
   color: white;
 }
+.skillsName {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 36px;
+}

@@ -28,21 +28,38 @@ export default function About() {
 
             <div>
               <div>
-                <p>UX</p>
+                <p className="skillsName">UX</p>
+
+                <div className={styles.lineContainer}>
+                  <div className={styles.uxOrangeLine} />
+                  <div className={styles.whiteLine} />
+                </div>
               </div>
-              <div></div>
+
               <div>
-                <p>Website Design</p>
+                <p className="skillsName">Website Design</p>
+
+                <div className={styles.lineContainer}>
+                  <div className={styles.webOrangeLine} />
+                  <div className={styles.whiteLine} />
+                </div>
               </div>
-              <div></div>
+
               <div>
-                <p>App Design</p>
+                <p className="skillsName">App Design</p>
+                <div className={styles.lineContainer}>
+                  <div className={styles.appOrangeLine} />
+                  <div className={styles.whiteLine} />
+                </div>
               </div>
-              <div></div>
+
               <div>
-                <p>Graphic Design</p>
+                <p className="skillsName">Graphic Design</p>
+                <div className={styles.lineContainer}>
+                  <div className={styles.graphicOrangeLine} />
+                  <div className={styles.whiteLine} />
+                </div>
               </div>
-              <div></div>
             </div>
           </div>
         </div>

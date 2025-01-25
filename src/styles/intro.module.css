@@ -37,3 +37,17 @@
   font-size: 21px;
   margin-top: 28px;
 }
+
+.imgContainer {
+  position: relative;
+}
+.imgContainer::after {
+  content: "";
+  width: 60%;
+  height: 83px;
+  background-color: rgba(253, 111, 0, 0.6);
+  position: absolute;
+  top: 78px;
+  right: 50%;
+  transform: translateX(50%);
+}

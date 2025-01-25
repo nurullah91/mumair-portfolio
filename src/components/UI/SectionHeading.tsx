@@ -1,7 +1,7 @@
 export interface ISectionHeadingProps {
   title?: string;
   subTitle?: string;
-  alignment?: "center" | "left" | "right";
+  alignment?: "center" | "start" | "end";
 }
 export default function SectionHeading({
   title,

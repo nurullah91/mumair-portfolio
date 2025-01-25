@@ -1,0 +1,33 @@
+.contentContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: "33px";
+}
+
+.aboutImg {
+  width: 680px;
+  height: 675px;
+}
+.title {
+  font-size: 65px;
+  font-weight: 600;
+}
+
+.description {
+  font-size: 21px;
+}
+
+.imgContainer {
+  position: relative;
+}
+.imgContainer::after {
+  content: "";
+  width: 60%;
+  height: 111px;
+  background-color: rgba(253, 111, 0, 0.6);
+  position: absolute;
+  top: 78px;
+  right: 50%;
+  transform: translateX(50%);
+}

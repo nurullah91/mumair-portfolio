@@ -5,7 +5,7 @@ export interface IContainerProps {
 }
 export default function Container({ children }: IContainerProps) {
   return (
-    <div style={{ width: "95%", margin: "0px auto", maxWidth: "1420px" }}>
+    <div style={{ width: "95%", margin: "0px auto", maxWidth: "1280px" }}>
       {children}
     </div>
   );

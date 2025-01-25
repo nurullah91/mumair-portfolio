@@ -1,0 +1,39 @@
+.contentContainer {
+  display: flex;
+  gap: 115px;
+  align-items: center;
+}
+
+.introImg {
+  height: auto;
+  width: 540px;
+}
+
+.hi {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.name {
+  font-size: 32px;
+  color: #fd6f00;
+  font-weight: 600;
+}
+
+.firstTitle {
+  font-size: 100px;
+  font-weight: 700;
+  line-height: 100px;
+  text-align: start;
+}
+.secondTitle {
+  font-size: 100px;
+  font-weight: 700;
+  line-height: 120px;
+  text-align: end;
+}
+
+.description {
+  font-size: 21px;
+  margin-top: 28px;
+}

@@ -9,7 +9,7 @@ export default function SectionHeading({
   alignment,
 }: ISectionHeadingProps) {
   return (
-    <div>
+    <div style={{ padding: "32px" }}>
       {title && (
         <h2
           style={{
@@ -30,6 +30,9 @@ export default function SectionHeading({
           textAlign: alignment || "center",
           color: "#000000",
           fontSize: "21px",
+          width: "90%",
+          maxWidth: "932px",
+          margin: "0px auto",
         }}
         className="section-subHeading"
       >

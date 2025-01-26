@@ -1,4 +1,5 @@
 import About from "@/components/Sections/About";
+import Contact from "@/components/Sections/Contact";
 import Intro from "@/components/Sections/Intro";
 import Service from "@/components/Sections/Service";
 import Footer from "@/components/Shared/Footer";
@@ -10,6 +11,7 @@ export default function Home() {
       <Intro />
       <About />
       <Service />
+      <Contact />
       <Footer />
     </div>
   );

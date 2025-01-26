@@ -3,7 +3,7 @@ import SectionHeading from "../UI/SectionHeading";
 import styles from "@/styles/contact.module.css";
 export default function Contact() {
   return (
-    <section>
+    <section style={{ marginTop: "139px" }}>
       <Container>
         <SectionHeading
           title="Lets Design Together"

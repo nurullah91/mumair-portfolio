@@ -9,7 +9,7 @@ export default function SectionHeading({
   alignment,
 }: ISectionHeadingProps) {
   return (
-    <div style={{ padding: "32px" }}>
+    <div>
       {title && (
         <h2
           style={{

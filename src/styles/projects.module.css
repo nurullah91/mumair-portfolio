@@ -1,0 +1,60 @@
+.buttonContainer {
+  margin-top: 60px;
+  margin-bottom: 110px;
+  display: flex;
+  gap: 17px;
+  align-items: center;
+  justify-content: center;
+}
+
+.tabButton {
+  padding: 10px 20px;
+  border-radius: 12px;
+  border: 0.4px solid #545454;
+  background-color: #f8f8f8;
+  font-size: 24px;
+}
+
+.tabButton:hover {
+  background-color: #fd6f00;
+  border: 0.4px solid transparent;
+  transition: all;
+  transition-duration: 300ms;
+  color: #ffffff;
+}
+
+.projectContainer {
+  display: flex;
+  justify-content: space-between;
+  gap: 44px;
+  align-items: end;
+}
+.imageContainer {
+  position: relative;
+  background-color: #ffebdb;
+  padding-left: 105px;
+  padding-right: 27px;
+}
+
+.frontImage {
+  width: 275px;
+  position: absolute;
+  bottom: 0;
+  right: 105px;
+  z-index: 10;
+}
+.backImage {
+  width: 275px;
+}
+
+.projectCat {
+  margin-top: 37px;
+  font-size: 19px;
+  color: #fd6f00;
+}
+
+.projectTitle {
+  font-size: 24px;
+  font-weight: 700;
+  display: inline;
+}

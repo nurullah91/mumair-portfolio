@@ -51,7 +51,12 @@ export default function Testimonial() {
     },
   ];
 
-  const [emblaRef, embla] = useEmblaCarousel({ loop: false, align: "center" });
+  const [emblaRef, embla] = useEmblaCarousel({
+    loop: false,
+    align: "center",
+    slidesToScroll: 1,
+    containScroll: "trimSnaps",
+  });
   const [selectedIndex, setSelectedIndex] = useState(0);
 
   const onSelect = useCallback(() => {

@@ -6,38 +6,12 @@ export interface ISectionHeadingProps {
 export default function SectionHeading({
   title,
   subTitle,
-  alignment,
 }: ISectionHeadingProps) {
   return (
     <div>
-      {title && (
-        <h2
-          style={{
-            fontWeight: "600",
-            textAlign: "center",
-            color: "#000000",
-            fontSize: "65px",
-          }}
-          className="section-heading"
-        >
-          {title}
-        </h2>
-      )}
+      {title && <h2 className="section-heading">{title}</h2>}
 
-      <p
-        style={{
-          fontWeight: "400",
-          textAlign: alignment || "center",
-          color: "#000000",
-          fontSize: "21px",
-          width: "90%",
-          maxWidth: "932px",
-          margin: "0px auto",
-        }}
-        className="section-subHeading"
-      >
-        {subTitle}
-      </p>
+      <p className="section-subHeading">{subTitle}</p>
     </div>
   );
 }

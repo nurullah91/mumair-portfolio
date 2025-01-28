@@ -11,26 +11,13 @@ export default function Contact() {
         />
 
         <div>
-          <form
-            style={{
-              display: "flex",
-              gap: "25px",
-              width: "100%",
-              maxWidth: "874px",
-              margin: "48px auto",
-              justifyContent: "center",
-            }}
-          >
+          <form className={styles.contactForm}>
             <input
               type="email"
               className={styles.emailInput}
               placeholder="Enter Your Email"
             />
-            <button
-              type="submit"
-              className="primaryBtn"
-              style={{ fontSize: "21px", width: "30%" }}
-            >
+            <button type="submit" className={`primaryBtn ${styles.contactBtn}`}>
               Contact Me
             </button>
           </form>

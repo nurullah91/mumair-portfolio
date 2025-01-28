@@ -1,7 +1,8 @@
 .buttonContainer {
   margin-top: 60px;
   margin-bottom: 110px;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
   gap: 17px;
   align-items: center;
   justify-content: center;
@@ -24,7 +25,8 @@
 }
 
 .projectContainer {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   justify-content: space-between;
   gap: 44px;
   align-items: end;
@@ -57,4 +59,62 @@
   font-size: 24px;
   font-weight: 700;
   display: inline;
+}
+
+/* Large screen responsive */
+@media only screen and (min-width: 993px) and (max-width: 1350px) {
+  .projectContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Tablet responsive */
+@media only screen and (max-width: 992px) {
+  .buttonContainer {
+    margin-top: 32px;
+    margin-bottom: 32px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .tabButton {
+    padding: 6px 8px;
+    border-radius: 8px;
+    font-size: 18px;
+  }
+
+  .projectContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+/* Mobile responsive */
+@media only screen and (max-width: 768px) {
+  .buttonContainer {
+    margin-top: 32px;
+    margin-bottom: 32px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .tabButton {
+    padding: 6px 8px;
+    border-radius: 8px;
+    font-size: 18px;
+  }
+
+  .projectContainer {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .imageContainer {
+    padding-left: 80px;
+  }
+
+  .frontImage {
+    width: 220px;
+    position: absolute;
+    bottom: 0;
+    right: 80px;
+    z-index: 10;
+  }
+  .backImage {
+    width: 220px;
+  }
 }

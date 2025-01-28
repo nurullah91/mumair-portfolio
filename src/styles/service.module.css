@@ -1,8 +1,8 @@
 .serviceContainer {
   margin-top: 24px;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   gap: 31px;
-  justify-content: space-between;
 }
 
 .serviceBox {
@@ -24,4 +24,27 @@
 .serviceDetails {
   font-size: 19px;
   margin-top: 15px;
+}
+
+/* Tablet responsive */
+@media only screen and (max-width: 992px) {
+  .serviceContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+/* Mobile responsive */
+@media only screen and (max-width: 768px) {
+  .serviceContainer {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 24px;
+  }
+  .serviceIcon {
+    height: 50px;
+  }
+  .serviceTitle {
+    font-size: 24px;
+  }
+  .serviceDetails {
+    font-size: 18px;
+  }
 }

@@ -31,6 +31,24 @@ body {
 a {
   text-decoration: none;
 }
+
+/* Section Heading styles */
+.section-heading {
+  font-weight: 600;
+  text-align: center;
+  color: #000000;
+  font-size: 64px;
+}
+/* Sub Heading */
+.section-subHeading {
+  font-weight: 400;
+  text-align: center;
+  color: #000000;
+  font-size: 21px;
+  width: 90%;
+  margin: 0 auto;
+}
+
 .primaryBtn {
   background-color: #fd6f00;
   text-decoration: none;
@@ -106,6 +124,9 @@ a {
 
 /* Tablet responsive */
 @media only screen and (max-width: 992px) {
+  .section-heading {
+    font-size: 44px;
+  }
   .navItemHidden {
     display: none;
   }
@@ -126,6 +147,13 @@ a {
 }
 /* Mobile responsive */
 @media only screen and (max-width: 768px) {
+  .section-heading {
+    font-size: 32px;
+  }
+
+  .section-subHeading {
+    font-size: 18px;
+  }
   .skillsName {
     font-size: 18px;
   }

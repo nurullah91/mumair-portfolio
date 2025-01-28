@@ -6,3 +6,46 @@
   padding: 12px 21px;
   font-size: 21px;
 }
+
+.contactForm {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+  width: 100%;
+  max-width: 874px;
+  margin: 10 auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.contactBtn {
+  font-size: 21px;
+  width: 30%;
+  border-radius: 14px;
+}
+
+/* Large screen responsive */
+@media only screen and (min-width: 993px) and (max-width: 1350px) {
+}
+
+/* Tablet responsive */
+@media only screen and (max-width: 992px) {
+  .contactBtn {
+    font-size: 18px;
+    width: 100%;
+  }
+  .emailInput {
+    width: 100%;
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-size: 18px;
+  }
+}
+/* Mobile responsive */
+@media only screen and (max-width: 768px) {
+  .contactForm {
+    flex-direction: column;
+    gap: 12px;
+    align-items: start;
+  }
+}

@@ -12,7 +12,6 @@
 
 .emblaContainer {
   display: flex;
-  gap: 1rem;
   align-items: center;
 }
 
@@ -26,6 +25,7 @@
   background: #f8f8f8;
   border-radius: 14px;
   display: flex;
+  flex-direction: row;
   align-items: center;
   gap: 11px;
 }
@@ -79,4 +79,58 @@
 }
 .emblaSlide.inactive {
   opacity: 0.2;
+}
+
+/* Mobile responsive */
+@media only screen and (max-width: 768px) {
+  .emblaContainer {
+    gap: 0; /* Removes extra spacing */
+  }
+  .testimonialCard {
+    width: 100vw;
+    padding: 20px;
+    flex-direction: column; /* Stack elements */
+  }
+  .emblaSlide {
+    flex: 0 0 100%;
+    width: 100vw;
+  }
+  .testimonialCard {
+    padding: 16px 8px;
+    border-radius: 8px;
+    flex-direction: column;
+  }
+
+  .testimonialImage {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    margin: 0 auto;
+  }
+  .quote {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .message {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .name {
+    font-size: 21px;
+  }
+
+  .title {
+    font-size: 18px;
+  }
+
+  .dots {
+    margin-top: 40px;
+  }
+
+  .dot {
+    width: 40px;
+    height: 12px;
+    border-radius: 5px;
+  }
 }

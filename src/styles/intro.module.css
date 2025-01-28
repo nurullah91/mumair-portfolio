@@ -1,12 +1,14 @@
 .contentContainer {
   display: flex;
   gap: 115px;
+  flex-direction: row;
   align-items: center;
 }
 
 .introImg {
   height: auto;
   width: 540px;
+  margin: 0;
 }
 
 .hi {
@@ -50,4 +52,64 @@
   top: 78px;
   right: 50%;
   transform: translateX(50%);
+}
+
+/* Large screen responsive */
+@media only screen and (min-width: 993px) and (max-width: 1350px) {
+  .introImg {
+    width: 300px;
+  }
+
+  .imgContainer::after {
+    width: 50%;
+    height: 40px;
+    top: 50px;
+  }
+}
+
+/* Tablet responsive */
+@media only screen and (max-width: 992px) {
+  .contentContainer {
+    flex-direction: column-reverse;
+    gap: 39px;
+  }
+
+  .introImg {
+    width: 540px;
+    margin: 0 auto;
+  }
+}
+/* Mobile responsive */
+@media only screen and (max-width: 768px) {
+  .introImg {
+    width: 300px;
+  }
+  .imgContainer::after {
+    width: 50%;
+    height: 40px;
+    top: 50px;
+  }
+
+  .hi {
+    font-size: 18px;
+  }
+
+  .name {
+    font-size: 24px;
+  }
+
+  .firstTitle {
+    font-size: 64px;
+    line-height: 60px;
+  }
+  .secondTitle {
+    font-size: 64px;
+    line-height: 70px;
+    text-align: center;
+  }
+
+  .description {
+    font-size: 18px;
+    margin-top: 18px;
+  }
 }

@@ -126,6 +126,9 @@ a {
 }
 /* Mobile responsive */
 @media only screen and (max-width: 768px) {
+  .skillsName {
+    font-size: 18px;
+  }
   .navItemContainer {
     flex-direction: column;
   }

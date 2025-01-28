@@ -5,6 +5,7 @@ import useEmblaCarousel from "embla-carousel-react";
 import Image, { StaticImageData } from "next/image";
 import firstPerson from "@/assets/Ellipse 10.png";
 import secondPerson from "@/assets/Ellipse 11.png";
+import SectionHeading from "../UI/SectionHeading";
 
 interface Testimonial {
   id: number;
@@ -65,42 +66,53 @@ export default function Testimonial() {
   }, [embla, onSelect]);
 
   return (
-    <div className={styles.carousel}>
-      <div className={styles.embla} ref={emblaRef}>
-        <div className={styles.emblaContainer}>
-          {testimonials.map((testimonial) => (
-            <div className={styles.emblaSlide} key={testimonial.id}>
-              <div className={styles.testimonialCard}>
-                <Image
-                  src={testimonial.image}
-                  alt={testimonial.name}
-                  className={styles.testimonialImage}
-                />
-                <div className={styles.testimonialContent}>
-                  <p className={styles.message}>
-                    <span className={styles.quote}>&quot;</span>
-                    {testimonial.message}
-                    <span className={styles.quote}>&quot;</span>
-                  </p>
-                  <p className={styles.name}>{testimonial.name}</p>
-                  <p className={styles.title}>{testimonial.title}</p>
+    <section style={{ marginTop: "139px" }}>
+      <SectionHeading
+        title="Testimonials"
+        subTitle="Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa nibh lectus netus in. Aliquet donec morbi convallis pretium"
+      />
+      <div className={styles.carousel}>
+        <div className={styles.embla} ref={emblaRef}>
+          <div className={styles.emblaContainer}>
+            {testimonials.map((testimonial, index) => (
+              <div
+                className={`${styles.emblaSlide} ${
+                  index !== selectedIndex ? styles.inactive : ""
+                }`}
+                key={testimonial.id}
+              >
+                <div className={styles.testimonialCard}>
+                  <Image
+                    src={testimonial.image}
+                    alt={testimonial.name}
+                    className={styles.testimonialImage}
+                  />
+                  <div className={styles.testimonialContent}>
+                    <p className={styles.message}>
+                      <span className={styles.quote}>&quot;</span>
+                      {testimonial.message}
+                      <span className={styles.quote}>&quot;</span>
+                    </p>
+                    <p className={styles.name}>{testimonial.name}</p>
+                    <p className={styles.title}>{testimonial.title}</p>
+                  </div>
                 </div>
               </div>
-            </div>
+            ))}
+          </div>
+        </div>
+        <div className={styles.dots}>
+          {testimonials.map((_, index) => (
+            <button
+              key={index}
+              className={`${styles.dot} ${
+                index === selectedIndex ? styles.active : ""
+              }`}
+              onClick={() => embla?.scrollTo(index)}
+            />
           ))}
         </div>
       </div>
-      <div className={styles.dots}>
-        {testimonials.map((_, index) => (
-          <button
-            key={index}
-            className={`${styles.dot} ${
-              index === selectedIndex ? styles.active : ""
-            }`}
-            onClick={() => embla?.scrollTo(index)}
-          />
-        ))}
-      </div>
-    </div>
+    </section>
   );
 }

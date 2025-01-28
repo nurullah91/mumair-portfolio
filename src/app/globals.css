@@ -40,9 +40,20 @@ a {
   color: white;
 }
 
+.navLogo {
+  width: 280px;
+  height: auto;
+}
+
 .navItemContainer {
   display: flex;
+  flex-direction: row;
   gap: 12px;
+  position: static;
+}
+
+.navItemHidden {
+  display: block;
 }
 
 .navItem {
@@ -51,7 +62,16 @@ a {
   color: #000000;
   padding: 10px 14px;
 }
-
+.menuButton {
+  display: none;
+  text-decoration: none;
+  border: none;
+  background: transparent;
+}
+.navDownloadBtn {
+  font-size: 21px;
+  color: #ffffff;
+}
 .skillsName {
   font-size: 24px;
   font-weight: 600;
@@ -60,4 +80,53 @@ a {
 .socialIcon {
   width: 33px;
   height: 33px;
+}
+
+/* Large screen responsive */
+@media only screen and (max-width: 1350px) {
+  .navLogo {
+    width: 180px;
+  }
+  .navDownloadBtn {
+    font-size: 18px;
+  }
+  .primaryBtn {
+    padding: 8px 6px;
+  }
+  .navItem {
+    font-size: 18px;
+    color: #000000;
+    padding: 4px 8px;
+  }
+
+  .navItemContainer {
+    gap: 4px;
+  }
+}
+
+/* Tablet responsive */
+@media only screen and (max-width: 992px) {
+  .navItemHidden {
+    display: none;
+  }
+  .menuButton {
+    display: block;
+  }
+  .navItemContainer {
+    flex-direction: column;
+    align-items: end;
+    position: absolute;
+    top: 30px;
+    right: -10;
+    background: #ffffff;
+    z-index: 20;
+    padding: 20px;
+    border-radius: 5px;
+  }
+}
+/* Mobile responsive */
+@media only screen and (max-width: 768px) {
+  .navItemContainer {
+    flex-direction: column;
+  }
 }

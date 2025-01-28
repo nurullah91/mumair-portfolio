@@ -2,14 +2,31 @@ import Image from "next/image";
 import logo from "@/assets/logo.png";
 import styles from "@/styles/footer.module.css";
 import SocialIcons from "../UI/SocialIcons";
-import NavMenu from "../UI/NavMenu";
+import Link from "next/link";
 export default function Footer() {
   return (
     <footer className={styles.footerContainer}>
       <div className={styles.footerContentContainer}>
         <Image src={logo} alt="Logo" />
         <div className={styles.navSecondContainer}>
-          <NavMenu />
+          <Link href={"/"} className="navItem">
+            Home
+          </Link>
+          <Link href={"/"} className="navItem">
+            About Me
+          </Link>
+          <Link href={"/"} className="navItem">
+            Services
+          </Link>
+          <Link href={"/"} className="navItem">
+            Projects
+          </Link>
+          <Link href={"/"} className="navItem">
+            Testimonials
+          </Link>
+          <Link href={"/"} className="navItem">
+            Contacts
+          </Link>
         </div>
 
         <SocialIcons />

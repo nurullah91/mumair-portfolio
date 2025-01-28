@@ -9,13 +9,13 @@ export default function Navbar() {
     <nav style={{ marginTop: "60px" }}>
       <Container>
         <div className={styles.navContainer}>
-          <Image src={logo} alt="logo" style={{ width: "280px" }} />
+          <Image src={logo} alt="logo" className="navLogo" width={280} />
           <div className={styles.navSecondContainer}>
             {/* Menu of navbar */}
             <NavMenu />
             <div>
               <button className="primaryBtn">
-                <a href="#" style={{ color: "#FFFFFF", fontSize: "21px" }}>
+                <a href="#" className="navDownloadBtn">
                   Download CV
                 </a>
               </button>

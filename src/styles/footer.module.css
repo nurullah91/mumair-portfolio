@@ -5,8 +5,9 @@
 }
 .navSecondContainer {
   display: flex;
+  flex-direction: row;
   align-items: center;
-  gap: 24px;
+  gap: 14px;
   font-family: poppins;
 }
 
@@ -34,4 +35,11 @@
 }
 .name {
   color: #fd6f00;
+}
+
+/* Mobile responsive */
+@media only screen and (max-width: 768px) {
+  .navSecondContainer {
+    flex-direction: column;
+  }
 }
